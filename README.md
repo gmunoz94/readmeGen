@@ -25,8 +25,8 @@ to make a high quality read me file
     Gerardo Munoz
 
 ## Contact
-    GitHub: [gmunoz94](https://github.com/gmunoz94)
-    Email: [g.munozii@icloud.com](mailto:g.munozii@icloud.com)
+GitHub: [gmunoz94](https://github.com/gmunoz94)
+Email: [g.munozii@icloud.com](mailto:g.munozii@icloud.com)
     
 ## Video
-    [video](https://youtu.be/l3h4LeG4_k4)
+[video](https://youtu.be/l3h4LeG4_k4)
