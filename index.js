@@ -10,43 +10,72 @@ const promptUser = () => {
         {
             type: 'input',
             message: 'What is the name of your Project?',
-            name: 'projName'
+            name: 'title'
         },
         {
             type: 'input',
             message: 'What is the description of the Application?',
-            name: 'projDescription'
+            name: 'description'
         },
         {
             type: 'input',
             message: 'How would a user install the Application?',
-            name: 'projInstall'
+            name: 'installation'
         },     
         {
             type: 'input',
             message: 'What is the purpose of the Application?',
-            name: 'projPurpose'
+            name: 'usage'
         },     
         {
             type: 'input',
-            message: '?',
-            name: 'proj1'
+            message: 'Who all contributed to the project?',
+            name: 'contributors'
+        },        
+        {
+            type: 'input',
+            message: 'What is your github username??',
+            name: 'username'
         },     
         {
             type: 'input',
-            message: 'How would a user install the Application?',
-            name: 'proj2'
-        },     
-        {
-            type: 'input',
-            message: 'How would a user install the Application?',
-            name: 'proj3'
-        },     
+            message: 'What is your email address?',
+            name: 'email'
+        }
     ]);
 }
 
 const generateReadme = (answers) =>
-`# ${answers.projName}`;
+`
+# ${answers.title}
+
+## Description
+${answers.description}
+
+## Table of Contents
+> -[Installation](#installation)
+>
+> -[Usage](#usage)
+>
+> -[Contributors](#contributors)
+>
+> -[Contact Me](#contact)
+>
+> -[Licence](#licence)
+
+## Installation
+    ${answers.installation}
+
+## Usage
+    ${answers.usage}
+
+## Contributors
+    ${answers.contributors}
+
+## Contact
+    GitHub: [${answers.username}](https://github.com/${answers.username})
+    Email: [${answers.email}](mailto:${answers.email})
+    `;
 
 const init = () => {
     promptUser()
